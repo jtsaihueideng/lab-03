@@ -28,7 +28,16 @@ def save_mail(mail: List[Dict[str, str]]) -> None:
     thisdir.joinpath('mail_db.json').write_text(json.dumps(mail, indent=4))
 
 def add_mail(mail_entry: Dict[str, str]) -> str:
-    """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    """	
+	Gets the list of dictionaries representing the mail entries.
+        Appends mail_entry to the list.	
+	Generates a unique id for mail_entry. Saves the updated list.
+      
+	Args:
+	  mail_entry (Dict[str,str]): New mail entry to be inserted
+ 
+	Returns:
+   	  String: Returns the mail id of mail_entry 
     """
     mail = load_mail()
     mail.append(mail_entry)
@@ -38,7 +47,15 @@ def add_mail(mail_entry: Dict[str, str]) -> str:
 
 def delete_mail(mail_id: str) -> bool:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
-    """
+   	Gets the list of dictionaries representing the mail entries.
+	Searches for the mail_id. If found, pop mail entry out of the list
+        
+        Args:
+	  mail_id (str): ID of mail to be deleted
+
+	Returns:
+	  bool: True if mail is in the list and deleted, False otherwise 
+   """
     mail = load_mail()
     for i, entry in enumerate(mail):
         if entry['id'] == mail_id:
