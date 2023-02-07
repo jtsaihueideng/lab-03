@@ -15,6 +15,9 @@ support scalability.
 
 Answer for Question 2:
 
+The mail server is provide the mail entries that the client requests based on the requests they made. For instance, when the 
+client makes a request to get the inbox, the resources provided are the mail entries which includes information about the recipients,
+senders, mail IDs, etc.
 
 
 Answer for Question 3:
