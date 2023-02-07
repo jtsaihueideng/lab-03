@@ -161,7 +161,9 @@ def delete_mail_route(mail_id: str):
       res.status_code = 200
       return res
     else:
-      return None
+      res = jsonify({'message': 'ID not found'})
+      res.status_code = 200
+      return res
 
 @app.route('/mail/<mail_id>', methods=['GET'])
 def get_mail_route(mail_id: str):
