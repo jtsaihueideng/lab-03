@@ -33,7 +33,7 @@ def send_mail(recipient: str, sender: str, subject: str, body: str) -> bool:
 
 def get_inbox(recipient: str) -> None:
     """
-    Sends a GET request 
+    Sends a GET request to the server to get the mail with the specified recipient.
 
     Args:
         recipient (str): The recipient of the mail
@@ -46,7 +46,7 @@ def get_inbox(recipient: str) -> None:
 
 def get_sent(sender: str) -> None:
     """
-    Sends a GET request 
+    Sends a GET request to the server to get the mail with the specified sender.
 	
     Args:
 	sender (str): The sender of the mail
@@ -59,7 +59,7 @@ def get_sent(sender: str) -> None:
 
 def get_mail(mail_id: str) -> None:
     """
-    Sends a GET request
+    Sends a GET request to the server to get the mail with the specified mail_id.
 
     Args:
 	mail_id (str): The ID of the mail
