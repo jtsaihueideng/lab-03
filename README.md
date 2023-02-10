@@ -22,7 +22,8 @@ senders, mail IDs, etc.
 
 Answer for Question 3:
 
-The PUT method is not used in the mail server. 
+The PUT method is not used in the mail server. We can extend our mail server to use this method by allowing the functionality of
+revising the body of the message that we already sent.
 
 Answer for Question 4:
 
