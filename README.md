@@ -3,7 +3,7 @@
 
 ## Team Members
 - Julie Deng
-- team member 2
+- Ellen Ko
 
 ## Lab Question Answers
 
@@ -22,9 +22,12 @@ senders, mail IDs, etc.
 
 Answer for Question 3:
 
-
+The PUT method is not used in the mail server. 
 
 Answer for Question 4:
 
+API keys are used for project authentication and project authorization. They're used to keep track of usage and identify invalid or malicious
+requests. They also tell the API whether the requesting application has permission to use the API and which of the API's services it may access. 
 
+Referred to this website: https://blog.hubspot.com/website/api-keys 
 
